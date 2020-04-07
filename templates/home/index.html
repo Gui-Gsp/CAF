@@ -5,7 +5,29 @@
 
 {% block content %}
 
-    <button class="btn btn-success">sdad</button>
+    <main class="card">
+        <div class="title-content">
+            <h1>Bem vindo ao CAF!</h1>
+        </div>
+
+        <div class="cards-users">
+            <a href="http://localhost:8000/admin/" class="card-user card-user-admin border border-info">
+                <div class="admin-content-icon">
+                    <i class="fas fa-user-shield text-info"></i>
+                </div>
+                <div class="admin-content-text">
+                    <h2 class="text-info">Sou <br> administrador</h2>
+                </div>
+            </a>
+            <a href="{% url 'client login' %}" class="card-user card-user-client border border-success">
+                <div class="client-content-icon">
+                    <i class="fas fa-user text-success"></i>
+                </div>
+                <div class="client-content-text">
+                    <h2 class="text-success">Sou <br> funcionário</h2>
+                </div>
+            </a>
+        </div>
+    </main>
 
 {% endblock %}
-

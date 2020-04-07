@@ -1,10 +1,16 @@
 asgiref==3.2.7
 Django==3.0.4
+django-appconf==1.0.4
 django-environ==0.4.5
 django-extensions==2.2.9
+django-libsass==0.7
+django-polls==0.1
 django-widget-tweaks==1.4.8
+libsass==0.19.4
 mysqlclient==1.4.6
 python-decouple==3.3
 pytz==2019.3
+rcssmin==1.0.6
+rjsmin==1.0.12
 six==1.14.0
 sqlparse==0.3.1

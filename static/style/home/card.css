@@ -1,0 +1,38 @@
+.card {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card .title-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card .cards-users {
+    display: flex;
+    text-align: center;
+}
+
+.card .cards-users .card-user {
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 40px;
+    text-decoration:none;
+}
+
+.card .cards-users .card-user:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.card .cards-users .card-user i {
+    font-size: 3rem;
+}
