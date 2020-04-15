@@ -1,11 +1,13 @@
 {% extends "common/base.html" %}
 
+{% load static %}
 
 {% block title %} Home {% endblock %}
+{% block link_href %} {% static 'style/home/index.css' %} {% endblock %}
 
 {% block content %}
 
-    <main class="card">
+    <main class="content-column">
         <div class="title-content">
             <h1>Bem vindo ao CAF!</h1>
         </div>
@@ -19,7 +21,7 @@
                     <h2 class="text-info">Sou <br> administrador</h2>
                 </div>
             </a>
-            <a href="{% url 'client login' %}" class="card-user card-user-client border border-success">
+            <a href="{% url 'client_login' %}" class="card-user card-user-client border border-success">
                 <div class="client-content-icon">
                     <i class="fas fa-user text-success"></i>
                 </div>
