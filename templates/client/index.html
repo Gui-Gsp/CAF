@@ -3,11 +3,13 @@
 {% load static %}
 
 {% block title %} Dashboard {% endblock  %}
-{% block link_href %} {% endblock %}
+
+{% block link_css %}
+
+{% endblock %}
 
 {% block content %}
 
-    <div class="wrap">
 
         <ul class="aside-menu">
             <div class="logo-home">
@@ -46,20 +48,31 @@
 
             <div class="search-bar">
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                    <input type="text" class="form-control" placeholder="Digite o nome de uma sala" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <div class="input-group-append">
                         <button class="btn" type="button" id="button-addon1"><i class="fas fa-search"></i></button>
                     </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
             </div>
+
+            <div class="sistem-notification">
+                <i class="fas fa-bell pointer"><span class="text-white bg-danger">122</span></i>
+            </div>
+
+            <div class="admin-notification">
+                <i class="fas fa-envelope pointer"><span class="text-white bg-danger">122</span></i>
+            </div>
+
+            <span class="bar"></span>
+
+            <h1 class="user-name">Fulano de tal</h1>
+
+            <img src="{% static 'images/user.png' %}" alt="photo-perfil">
+
         </nav>
 
         <main class="content-dashboard">
         
-
-        
         </main>
-
-    </div>
     
 {% endblock  %}

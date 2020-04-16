@@ -10,21 +10,28 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="{% static 'style/bootstrap/css/bootstrap.min.css' %}">
-        {% block link_href %}
-        
-        {% endblock  %}
         <link rel="stylesheet" href="{% static 'style/common/global.css' %}">
         <link rel="stylesheet" href="{% static 'style/client/common/grid.css' %}">
         <link rel="stylesheet" href="{% static 'style/client/common/aside-menu.css' %}">
+        <link rel="stylesheet" href="{% static 'style/client/common/nav-bar.css' %}">
+        {% block link_css %}
+        
+        {% endblock  %}
 
         <!-- google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
         
     </head>
     <body>
-        {% block content %}
+    
+        <div class="wrap">
 
-        {% endblock %}
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+
 
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
