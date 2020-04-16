@@ -10,14 +10,20 @@
     <div class="wrap">
 
         <ul class="bg-primary aside-menu">
-            
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <a href="{% url 'dashboard' %}"><img src="{% static 'images/icon-dashboard.png' %}" alt="home"></a>
+            <hr class="line">
+            <li>Salas</li>
+                <ul>
+                    <li>Todas</li>
+                    <li>Histórico de reservas</li>
+                    <li>Reservadas</li>
+                </ul>
+            <li>Check-in</li>
+            <li>Check-out</li>
+            <li>Reclamações</li>
         </ul>
 
-        <nav class="top-menu bg-warning">
+        <nav class="nav-bar">
 
         </nav>
 
