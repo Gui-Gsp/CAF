@@ -11,8 +11,8 @@
 }
 
 .aside-menu .topic:hover {
-    background-color: #FFD12F;
-    color: #4e73df;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .aside-menu .topic i {
@@ -33,7 +33,7 @@
 }
 
 .aside-menu .topic .subtopics .subtopic:hover {
-    color: #4e73df;
+    color: var(--primary);
 }
 
 .aside-menu .line {

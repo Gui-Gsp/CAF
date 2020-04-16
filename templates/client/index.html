@@ -56,7 +56,7 @@
             </div>
 
             <div class="sistem-notification">
-                <i class="fas fa-bell pointer"><span class="text-white bg-danger">122</span></i>
+                <i class="fas fa-bell pointer"><span class="text-white bg-danger">2</span></i>
             </div>
 
             <div class="admin-notification">
@@ -72,7 +72,11 @@
         </nav>
 
         <main class="content-dashboard">
-        
+            
+            {% block dashboard_content %}
+                
+            {% endblock  %}
+
         </main>
     
 {% endblock  %}

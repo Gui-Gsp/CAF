@@ -9,13 +9,13 @@
 }
 
 .nav-bar .search-bar button {
-    background-color: #4e73df;
+    background-color: var(--primary);
     color: white;
 }
 
 .nav-bar .search-bar button:hover {
-    background-color: #FFD12F;
-    color: #4e73df;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .nav-bar .sistem-notification {
@@ -23,7 +23,7 @@
 }
 
 .nav-bar .sistem-notification i {
-    color: #4e73df;
+    color: var(--primary);
     transition: color .6s;
     position: relative;
 }
@@ -37,7 +37,7 @@
 }
 
 .nav-bar .sistem-notification i:hover {
-    color: #FFD12F;
+    color: var(--secondary);
 }
 
 .nav-bar .admin-notification {
@@ -45,7 +45,7 @@
 }
 
 .nav-bar .admin-notification i {
-    color: #4e73df;
+    color: var(--primary);
     transition: color .6s;
     position: relative;
 }
@@ -59,7 +59,7 @@
 }
 
 .nav-bar .admin-notification i:hover {
-    color: #FFD12F;
+    color: var(--secondary);
 }
 
 .nav-bar .bar:after {

@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: #4e73df;
+    background-color: var(--primary);
 }
 
 .nav-bar {
