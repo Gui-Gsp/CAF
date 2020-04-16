@@ -1,0 +1,23 @@
+.wrap {
+    display: grid;
+    grid-template-columns: 13% 87%;
+    grid-template-rows: 62px 150px;
+    grid-template-areas: 
+    "aside-menu menu-top"
+    "aside-menu content"
+    ;
+}
+
+.aside-menu {
+    grid-area: aside-menu;
+    min-height: 100vh;
+}
+
+.menu-top {
+    grid-area: menu-top;
+    width: 60%;
+}
+
+.content-dashboard {
+    grid-area: content;
+}
