@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block title %} Dashboard {% endblock  %}
-{% block link_href %} {% static 'style/client/index.css' %} {% endblock %}
+{% block link_href %} {% endblock %}
 
 {% block content %}
 
@@ -16,7 +16,11 @@
             
             <hr class="line">
             
-            <li class="topic dropdown text-white" data-toggle="collapse" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+            <li class="topic pointer"><i class="fas fa-user-tie"></i></i>Perfil</li>
+
+            <hr class="line">
+
+            <li class="topic pointer" data-toggle="collapse" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-person-booth"></i>
                 <span class="text-center">Salas</span>
                 <i class="fas fa-chevron-right float-right"></i>
@@ -26,15 +30,28 @@
                     <li class="subtopic"><i class="fas fa-check-square"></i><span class="text-center">Reservadas</span></li>
                 </ul>
             </li>
+
             <hr class="line">
 
-            <li class="topic"><i class="fas fa-door-open"></i>Check-in</li>
-            <li class="topic"><i class="fas fa-door-closed"></i>Check-out</li>
-            <li class="topic"><i class="fas fa-info"></i>Reclamações</li>
+            <li class="topic pointer"><i class="fas fa-door-open"></i>Check-in</li>
+            <li class="topic pointer"><i class="fas fa-door-closed"></i>Check-out</li>
+            <li class="topic pointer"><i class="fas fa-info"></i>Reclamações</li>
+
+            <hr class="line">
+
+
         </ul>
 
         <nav class="nav-bar">
 
+            <div class="search-bar">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn" type="button" id="button-addon1"><i class="fas fa-search"></i></button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+            </div>
         </nav>
 
         <main class="content-dashboard">

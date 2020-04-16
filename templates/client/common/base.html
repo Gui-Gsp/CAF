@@ -10,8 +10,12 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="{% static 'style/bootstrap/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% block link_href %}{% endblock  %}">
+        {% block link_href %}
+        
+        {% endblock  %}
         <link rel="stylesheet" href="{% static 'style/common/global.css' %}">
+        <link rel="stylesheet" href="{% static 'style/client/common/grid.css' %}">
+        <link rel="stylesheet" href="{% static 'style/client/common/aside-menu.css' %}">
 
         <!-- google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
@@ -28,6 +32,6 @@
         
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/038770cb31.js" crossorigin="anonymous"></script>
-        
+
     </body>
 </html>

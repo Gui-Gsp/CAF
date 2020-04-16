@@ -19,37 +19,6 @@
     background-color: #4e73df;
 }
 
-.aside-menu .logo-home {
-    display: flex;
-    justify-content: center;
-}
-
-.aside-menu .topic {
-    box-sizing: border-box;
-}
-
-.aside-menu .topic i {
-    margin: 5px;
-}
-
-.aside-menu .topic .subtopics {
-    padding: 15px;
-}
-
-.aside-menu .topic .subtopics .subtopic {
-    margin: 5px;
-    font-size: 14px;
-    transition: color 0.4s;
-}
-
-.aside-menu .topic .subtopics .subtopic:hover {
-    color: #4e73df;
-}
-
-.aside-menu .line {
-    width: 100%;
-}
-
 .nav-bar {
     grid-area: menu-top;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
