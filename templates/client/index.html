@@ -9,18 +9,28 @@
 
     <div class="wrap">
 
-        <ul class="bg-primary aside-menu">
-            <a href="{% url 'dashboard' %}"><img src="{% static 'images/icon-dashboard.png' %}" alt="home"></a>
+        <ul class="aside-menu">
+            <div class="logo-home">
+                <a href="{% url 'dashboard' %}"><img src="{% static 'images/icon-dashboard.png' %}" alt="home"></a>
+            </div>
+            
             <hr class="line">
-            <li>Salas</li>
-                <ul>
-                    <li>Todas</li>
-                    <li>Histórico de reservas</li>
-                    <li>Reservadas</li>
+            
+            <li class="topic dropdown text-white" data-toggle="collapse" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-person-booth"></i>
+                <span class="text-center">Salas</span>
+                <i class="fas fa-chevron-right float-right"></i>
+                <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
+                    <li class="subtopic"><i class="fas fa-list-ul"></i><span class="text-center">Todas</span></li>
+                    <li class="subtopic"><i class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></li>
+                    <li class="subtopic"><i class="fas fa-check-square"></i><span class="text-center">Reservadas</span></li>
                 </ul>
-            <li>Check-in</li>
-            <li>Check-out</li>
-            <li>Reclamações</li>
+            </li>
+            <hr class="line">
+
+            <li class="topic"><i class="fas fa-door-open"></i>Check-in</li>
+            <li class="topic"><i class="fas fa-door-closed"></i>Check-out</li>
+            <li class="topic"><i class="fas fa-info"></i>Reclamações</li>
         </ul>
 
         <nav class="nav-bar">

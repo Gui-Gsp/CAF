@@ -1,6 +1,6 @@
 .wrap {
     display: grid;
-    grid-template-columns: 13% 87%;
+    grid-template-columns: 224px auto;
     grid-template-rows: 62px 150px;
     grid-template-areas: 
     "aside-menu menu-top"
@@ -14,8 +14,36 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
+    background-color: #4e73df;
+}
+
+.aside-menu .logo-home {
+    display: flex;
+    justify-content: center;
+}
+
+.aside-menu .topic {
+    box-sizing: border-box;
+}
+
+.aside-menu .topic i {
+    margin: 5px;
+}
+
+.aside-menu .topic .subtopics {
+    padding: 15px;
+}
+
+.aside-menu .topic .subtopics .subtopic {
+    margin: 5px;
+    font-size: 14px;
+    transition: color 0.4s;
+}
+
+.aside-menu .topic .subtopics .subtopic:hover {
+    color: #4e73df;
 }
 
 .aside-menu .line {

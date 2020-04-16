@@ -4,6 +4,10 @@
     font-family: 'Nunito', 'Gotu', sans-serif;
 }
 
+.dropdown:hover {
+    cursor: pointer;
+}
+
 ul {
     margin: 0;
     padding: 0;
