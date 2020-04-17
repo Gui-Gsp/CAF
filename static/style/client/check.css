@@ -5,3 +5,43 @@
 .content-check-in {
     margin-right: 2%;
 }
+
+.content-check-in .card-body,
+.content-check-out .card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-check-in .card-body .room-name,
+.content-check-out .card-body .room-name {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+}
+
+.content-check-in .card-body .booking-time,
+.content-check-out .card-body .booking-time {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+.content-check-in .card-body button {
+    margin: auto;
+    background-color: var(--primary);
+    transition: background-color 0.6s;
+}
+
+.content-check-in .card-body button:hover {
+    background-color: var(--success);
+}
+
+.content-check-out .card-body button {
+    margin: auto;
+    background-color: var(--danger);
+    transition: background-color 0.6s;
+}
+
+.content-check-out .card-body button:hover {
+    background-color: var(--secondary);
+}
