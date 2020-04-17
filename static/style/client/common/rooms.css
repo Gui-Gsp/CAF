@@ -1,0 +1,42 @@
+.card-rooms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-rooms .room {
+    margin-top: 20px;
+    width: 24%;
+    transition: transform 0.8s, background-color 0.6s;
+}
+
+.card-rooms .room:hover {
+    transform: translateY(-8px);
+    background-color: lightgray;
+}
+
+.card-rooms .room .room-name {
+    font-size: 14px;
+}
+
+.card-rooms .room .content-hours {
+    height: 15px;
+    border: 1px solid #CAC9C9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-rooms .room .content-hours .hour {
+    height: 15px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card-rooms .room .content-hours strong {
+    display: block;
+    text-align: center;
+    align-self: center;
+    font-size: 12px;
+}

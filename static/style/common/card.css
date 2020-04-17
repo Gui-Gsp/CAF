@@ -1,13 +1,23 @@
 .card {
-    background-color: white;
+    background-color: #f8f9fc;
     padding: 8px 0.5rem;
     border: 1px solid #e3e6f0;
     border-radius: 0.35rem;
     box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    transition: transform 0.8s, background-color 0.6s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    background-color: lightgray;
 }
 
 .card .card-bg-primary {
     background-color: var(--primary);
+}
+
+.card .card-bg-danger {
+    background-color: var(--danger);
 }
 
 .card .card-bg-success {
@@ -26,8 +36,12 @@
     border-left: .25rem solid var(--primary)!important;
 }
 
+.card .border-left-danger {
+    border-left: .25rem solid var(--danger)!important;
+}
+
 .card .border-left-success {
-    border-left: .25rem solid var(--seccess)!important;
+    border-left: .25rem solid var(--success)!important;
 }
 
 .card .border-left-info {

@@ -6,6 +6,7 @@
 
 :root {
     --primary: #4e73df;
+    --danger: #DC0909;
     --secondary: #FFD12F;
     --success: #1cc88a;
     --info: #36b9cc;
@@ -14,6 +15,10 @@
 
 .bg-p {
     background-color: var(--primary);
+}
+
+.bg-d {
+    background-color: var(--danger);
 }
 
 .bg-se {

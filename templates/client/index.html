@@ -5,11 +5,11 @@
 {% block title %} Dashboard {% endblock  %}
 
 {% block link_css %}
-
+    <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/common/rooms.css' %}">
 {% endblock %}
 
 {% block content %}
-
 
         <ul class="aside-menu">
             <div class="logo-home">
@@ -71,11 +71,160 @@
 
         </nav>
 
-        <main class="content-dashboard">
+        <main class="content-dashboard p-5">
+
+            <div class="card mt-4 p-5">
             
-            {% block dashboard_content %}
+                <h1 class="card-title" >Salas</h1>
+
+                <div class="card-legend">
+
+                    <div class="time bg-su"></div>
+                    <div class="time bg-d"></div>
+                    <div class="time bg-i"></div>
+                    <div class="time bg-w"></div>
+
+                </div>
+
+                <div class="card-rooms">
                 
-            {% endblock  %}
+                    <div class="room card border-left-success">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-su"><strong>8</strong></div>
+                            <div class="hour morning bg-su"><strong>9</strong></div>
+                            <div class="hour morning bg-su"><strong>10</strong></div>
+                            <div class="hour morning bg-su"><strong>11</strong></div>
+                            <div class="hour morning bg-su"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-su"><strong>14</strong></div>
+                            <div class="hour afternoon bg-su"><strong>15</strong></div>
+                            <div class="hour afternoon bg-su"><strong>16</strong></div>
+                            <div class="hour afternoon bg-su"><strong>17</strong></div>
+                            <div class="hour afternoon bg-su"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+
+                    <div class="room card border-left-warning">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-su"><strong>8</strong></div>
+                            <div class="hour morning bg-su"><strong>9</strong></div>
+                            <div class="hour morning bg-d"><strong>10</strong></div>
+                            <div class="hour morning bg-su"><strong>11</strong></div>
+                            <div class="hour morning bg-d"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-su"><strong>14</strong></div>
+                            <div class="hour afternoon bg-su"><strong>15</strong></div>
+                            <div class="hour afternoon bg-info"><strong>16</strong></div>
+                            <div class="hour afternoon bg-su"><strong>17</strong></div>
+                            <div class="hour afternoon bg-su"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="room card border-left-success">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-su"><strong>8</strong></div>
+                            <div class="hour morning bg-su"><strong>9</strong></div>
+                            <div class="hour morning bg-su"><strong>10</strong></div>
+                            <div class="hour morning bg-su"><strong>11</strong></div>
+                            <div class="hour morning bg-su"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-su"><strong>14</strong></div>
+                            <div class="hour afternoon bg-su"><strong>15</strong></div>
+                            <div class="hour afternoon bg-su"><strong>16</strong></div>
+                            <div class="hour afternoon bg-su"><strong>17</strong></div>
+                            <div class="hour afternoon bg-su"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+
+                    <div class="room card border-left-danger">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-d"><strong>8</strong></div>
+                            <div class="hour morning bg-d"><strong>9</strong></div>
+                            <div class="hour morning bg-d"><strong>10</strong></div>
+                            <div class="hour morning bg-d"><strong>11</strong></div>
+                            <div class="hour morning bg-d"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-d"><strong>14</strong></div>
+                            <div class="hour afternoon bg-d"><strong>15</strong></div>
+                            <div class="hour afternoon bg-d"><strong>16</strong></div>
+                            <div class="hour afternoon bg-d"><strong>17</strong></div>
+                            <div class="hour afternoon bg-d"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="room card border-left-warning">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-su"><strong>8</strong></div>
+                            <div class="hour morning bg-su"><strong>9</strong></div>
+                            <div class="hour morning bg-i"><strong>10</strong></div>
+                            <div class="hour morning bg-su"><strong>11</strong></div>
+                            <div class="hour morning bg-su"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-su"><strong>14</strong></div>
+                            <div class="hour afternoon bg-su"><strong>15</strong></div>
+                            <div class="hour afternoon bg-su"><strong>16</strong></div>
+                            <div class="hour afternoon bg-su"><strong>17</strong></div>
+                            <div class="hour afternoon bg-su"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+
+                    <div class="room card border-left-danger">
+                        
+                        <h1 class="room-name">Nome da sala</h1>
+
+                        <div class="content-hours">
+                            <div class="hour morning bg-d"><strong>8</strong></div>
+                            <div class="hour morning bg-d"><strong>9</strong></div>
+                            <div class="hour morning bg-d"><strong>10</strong></div>
+                            <div class="hour morning bg-i"><strong>11</strong></div>
+                            <div class="hour morning bg-i"><strong>12</strong></div>
+                            
+                            <div class="hour bg-w"><strong>//</strong></div>
+
+                            <div class="hour afternoon bg-d"><strong>14</strong></div>
+                            <div class="hour afternoon bg-d"><strong>15</strong></div>
+                            <div class="hour afternoon bg-d"><strong>16</strong></div>
+                            <div class="hour afternoon bg-d"><strong>17</strong></div>
+                            <div class="hour afternoon bg-d"><strong>18</strong></div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+               
+            
+            </div>
 
         </main>
     
