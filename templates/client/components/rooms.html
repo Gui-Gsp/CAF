@@ -1,0 +1,224 @@
+<div class="card content-rooms mt-4 p-5">
+
+    <div class="card-info">
+    
+        <h1 class="card-title"><strong class="text-p">Salas</strong></h1>
+
+        <div class="card-legend">
+
+            <div class="time mt-1 bg-su"></div><span>Livre</span>
+            <div class="time mt-1 bg-d"></div><span>Reservada</span>
+            <div class="time mt-1 bg-i"></div><span>em uso</span>
+            <div class="time mt-1 bg-w"></div><span>intervalo</span>
+
+        </div>
+
+    </div>
+
+    <div class="card-rooms">
+    
+        {% include "client/components/room.html" with name="Nome da sala" cap="x" obs="'OBS'" %} 
+
+        <div class="room card border-left-warning">
+            
+            <h1 class="room-name">Nome da sala</h1>
+
+            <hr>
+
+            <p class="room-info room-cap">capacidade: {{cap}}</p>
+            <p class="room-info room-obs">observações: {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips">equipamentos:</p>
+                
+                    <li class="room-info room-item">Data show</li>
+                    <li class="room-info room-item">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item">Impressora</li>
+                    <li class="room-info room-item">Ar condicionado</li>
+                
+                </ol>
+
+            <hr>
+
+            <p class="room-info room-availability">Disponibilidades</p>
+
+            <div class="content-hours">
+                <div class="hour morning bg-su"><strong>8</strong></div>
+                <div class="hour morning bg-su"><strong>9</strong></div>
+                <div class="hour morning bg-d"><strong>10</strong></div>
+                <div class="hour morning bg-su"><strong>11</strong></div>
+                <div class="hour morning bg-d"><strong>12</strong></div>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <div class="hour afternoon bg-su"><strong>14</strong></div>
+                <div class="hour afternoon bg-su"><strong>15</strong></div>
+                <div class="hour afternoon bg-info"><strong>16</strong></div>
+                <div class="hour afternoon bg-su"><strong>17</strong></div>
+                <div class="hour afternoon bg-su"><strong>18</strong></div>
+            </div>
+
+        </div>
+        
+        <div class="room card border-left-success">
+            
+            <h1 class="room-name">Nome da sala</h1>
+
+            <hr>
+
+            <p class="room-info room-cap">capacidade: {{cap}}</p>
+            <p class="room-info room-obs">observações: {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips">equipamentos:</p>
+                
+                    <li class="room-info room-item">Data show</li>
+                    <li class="room-info room-item">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item">Impressora</li>
+                    <li class="room-info room-item">Ar condicionado</li>
+                
+                </ol>
+
+            <hr>
+
+            <p class="room-info room-availability">Disponibilidades</p>
+
+            <div class="content-hours">
+                <div class="hour morning bg-su"><strong>8</strong></div>
+                <div class="hour morning bg-su"><strong>9</strong></div>
+                <div class="hour morning bg-su"><strong>10</strong></div>
+                <div class="hour morning bg-su"><strong>11</strong></div>
+                <div class="hour morning bg-su"><strong>12</strong></div>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <div class="hour afternoon bg-su"><strong>14</strong></div>
+                <div class="hour afternoon bg-su"><strong>15</strong></div>
+                <div class="hour afternoon bg-su"><strong>16</strong></div>
+                <div class="hour afternoon bg-su"><strong>17</strong></div>
+                <div class="hour afternoon bg-su"><strong>18</strong></div>
+            </div>
+
+        </div>
+
+        <div class="room card border-left-danger">
+            
+            <h1 class="room-name">Nome da sala</h1>
+
+            <hr>
+
+            <p class="room-info room-cap">capacidade: {{cap}}</p>
+            <p class="room-info room-obs">observações: {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips">equipamentos:</p>
+                
+                    <li class="room-info room-item">Data show</li>
+                    <li class="room-info room-item">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item">Impressora</li>
+                    <li class="room-info room-item">Ar condicionado</li>
+                
+                </ol>
+
+            <hr>
+
+            <p class="room-info room-availability">Disponibilidades</p>
+
+            <div class="content-hours">
+                <div class="hour morning bg-d"><strong>8</strong></div>
+                <div class="hour morning bg-d"><strong>9</strong></div>
+                <div class="hour morning bg-d"><strong>10</strong></div>
+                <div class="hour morning bg-d"><strong>11</strong></div>
+                <div class="hour morning bg-d"><strong>12</strong></div>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <div class="hour afternoon bg-d"><strong>14</strong></div>
+                <div class="hour afternoon bg-d"><strong>15</strong></div>
+                <div class="hour afternoon bg-d"><strong>16</strong></div>
+                <div class="hour afternoon bg-d"><strong>17</strong></div>
+                <div class="hour afternoon bg-d"><strong>18</strong></div>
+            </div>
+
+        </div>
+        
+        <div class="room card border-left-warning">
+            
+            <h1 class="room-name">Nome da sala</h1>
+
+            <hr>
+
+            <p class="room-info room-cap">capacidade: {{cap}}</p>
+            <p class="room-info room-obs">observações: {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips">equipamentos:</p>
+                
+                    <li class="room-info room-item">Data show</li>
+                    <li class="room-info room-item">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item">Impressora</li>
+                    <li class="room-info room-item">Ar condicionado</li>
+                
+                </ol>
+
+            <hr>
+
+            <p class="room-info room-availability">Disponibilidades</p>
+
+            <div class="content-hours">
+                <div class="hour morning bg-su"><strong>8</strong></div>
+                <div class="hour morning bg-su"><strong>9</strong></div>
+                <div class="hour morning bg-i"><strong>10</strong></div>
+                <div class="hour morning bg-su"><strong>11</strong></div>
+                <div class="hour morning bg-su"><strong>12</strong></div>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <div class="hour afternoon bg-su"><strong>14</strong></div>
+                <div class="hour afternoon bg-su"><strong>15</strong></div>
+                <div class="hour afternoon bg-su"><strong>16</strong></div>
+                <div class="hour afternoon bg-su"><strong>17</strong></div>
+                <div class="hour afternoon bg-su"><strong>18</strong></div>
+            </div>
+
+        </div>
+
+        <div class="room card border-left-danger">
+            
+            <h1 class="room-name">Nome da sala</h1>
+
+            <hr>
+
+            <p class="room-info room-cap">capacidade: {{cap}}</p>
+            <p class="room-info room-obs">observações: {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips">equipamentos:</p>
+                
+                    <li class="room-info room-item">Data show</li>
+                    <li class="room-info room-item">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item">Impressora</li>
+                    <li class="room-info room-item">Ar condicionado</li>
+                
+                </ol>
+
+            <hr>
+
+            <p class="room-info room-availability">Disponibilidades</p>
+
+            <div class="content-hours">
+                <div class="hour morning bg-d"><strong>8</strong></div>
+                <div class="hour morning bg-d"><strong>9</strong></div>
+                <div class="hour morning bg-d"><strong>10</strong></div>
+                <div class="hour morning bg-i"><strong>11</strong></div>
+                <div class="hour morning bg-i"><strong>12</strong></div>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <div class="hour afternoon bg-d"><strong>14</strong></div>
+                <div class="hour afternoon bg-d"><strong>15</strong></div>
+                <div class="hour afternoon bg-d"><strong>16</strong></div>
+                <div class="hour afternoon bg-d"><strong>17</strong></div>
+                <div class="hour afternoon bg-d"><strong>18</strong></div>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>

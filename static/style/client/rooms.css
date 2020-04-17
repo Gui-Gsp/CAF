@@ -26,7 +26,29 @@
 }
 
 .content-rooms .card-rooms .room .room-name {
+    font-size: 16px;
+    margin: auto;
+}
+
+.content-rooms .card-rooms .room .room-info {
     font-size: 14px;
+}
+
+.content-rooms .card-rooms .room .room-availability {
+    margin: auto;
+}
+
+.content-rooms .card-rooms .room ol {
+    list-style-type: decimal;
+}
+
+.content-rooms .card-rooms .room .room-equips {
+    font-size: 13px;
+}
+
+.content-rooms .card-rooms .room .room-item {
+    font-size: 11px;
+    margin: 0 20px;
 }
 
 .content-rooms .card-rooms .room .content-hours {
@@ -40,8 +62,16 @@
 .content-rooms .card-rooms .room .content-hours .hour {
     height: 15px;
     width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
+}
+
+.content-rooms .card-rooms .room .content-hours .hour:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content-rooms .card-rooms .room .content-hours .hour:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .content-rooms .card-rooms .room .content-hours strong {
