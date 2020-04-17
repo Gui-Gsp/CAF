@@ -1,0 +1,52 @@
+.content-rooms {
+    width: 100%;
+}
+
+.content-rooms .card-rooms {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.content-rooms .card-rooms .room {
+    margin-top: 20px;
+    width: 24%;
+    transition: transform 0.8s, background-color 0.6s;
+    margin: 10px auto;
+}
+
+.content-rooms .card-rooms .room:nth-child(4n) {
+    margin-right: 0;
+}
+
+.content-rooms .card-rooms .room:hover {
+    transform: translateY(-8px);
+    background-color: lightgray;
+}
+
+.content-rooms .card-rooms .room .room-name {
+    font-size: 14px;
+}
+
+.content-rooms .card-rooms .room .content-hours {
+    height: 15px;
+    border: 1px solid #CAC9C9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-rooms .card-rooms .room .content-hours .hour {
+    height: 15px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.content-rooms .card-rooms .room .content-hours strong {
+    display: block;
+    text-align: center;
+    align-self: center;
+    font-size: 12px;
+}

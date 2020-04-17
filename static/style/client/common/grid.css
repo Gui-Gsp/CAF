@@ -6,11 +6,14 @@
     "aside-menu menu-top"
     "aside-menu content"
     ;
+    position: relative;
 }
 
 .aside-menu {
     grid-area: aside-menu;
-    min-height: 100vh;
+    position: fixed;
+    height: 100vh;
+    width: 224px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -26,4 +29,6 @@
 
 .content-dashboard {
     grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
 }

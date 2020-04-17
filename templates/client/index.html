@@ -6,14 +6,16 @@
 
 {% block link_css %}
     <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
-    <link rel="stylesheet" href="{% static 'style/client/common/rooms.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/rooms.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/check.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/booking.css' %}">
 {% endblock %}
 
 {% block content %}
 
         <ul class="aside-menu">
             <div class="logo-home">
-                <a href="{% url 'dashboard' %}"><img src="{% static 'images/icon-dashboard.png' %}" alt="home"></a>
+                <a href="{% url 'dashboard' %}"><img src="{% static 'images/dashboard-logo.png' %}" alt="home"></a>
             </div>
             
             <hr class="line">
@@ -73,19 +75,23 @@
 
         <main class="content-dashboard p-5">
 
-            <div class="card mt-4 p-5">
-            
-                <h1 class="card-title" >Salas</h1>
+            <div class="card content-rooms mt-4 p-5">
 
-                <div class="card-legend">
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Salas</strong></h1>
 
-                    <div class="time bg-su"></div>
-                    <div class="time bg-d"></div>
-                    <div class="time bg-i"></div>
-                    <div class="time bg-w"></div>
+                    <div class="card-legend">
+
+                        <div class="time mt-1 bg-su"></div><span>Livre</span>
+                        <div class="time mt-1 bg-d"></div><span>Reservada</span>
+                        <div class="time mt-1 bg-i"></div><span>em uso</span>
+                        <div class="time mt-1 bg-w"></div><span>intervalo</span>
+
+                    </div>
 
                 </div>
-
+            
                 <div class="card-rooms">
                 
                     <div class="room card border-left-success">
@@ -221,9 +227,51 @@
                     </div>
                     
                 </div>
-
-               
             
+            </div>
+
+            <div class="card content-check content-check-in mt-4 p-5">
+            
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Check-in</strong></h1>
+
+                </div>
+            
+            </div>
+
+            <div class="card content-check content-check-out mt-4 p-5">
+            
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Check-out</strong></h1>
+
+                </div>
+
+            </div>
+
+            <div class="card content-booking content-booking-past mt-4 p-5">
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Reservas passadas</strong></h1>
+
+                </div>
+            </div>
+            
+            <div class="card content-booking content-booking-current mt-4 p-5">
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Reservas atuais</strong></h1>
+
+                </div>
+            </div>
+
+            <div class="card content-booking content-booking-warning mt-4 p-5">
+                <div class="card-info">
+                
+                    <h1 class="card-title"><strong class="text-p">Reservas pendências</strong></h1>
+
+                </div>
             </div>
 
         </main>

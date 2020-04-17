@@ -5,11 +5,14 @@
     border-radius: 0.35rem;
     box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15)!important;
     transition: transform 0.8s, background-color 0.6s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    background-color: lightgray;
+    transform: translateY(-12px);
+    background-color: var(--light-dark);
 }
 
 .card .card-bg-primary {
@@ -50,4 +53,39 @@
 
 .card .border-left-warning {
     border-left: .25rem solid var(--warning)!important;
+}
+
+.card .card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-info .card-title {
+    font-size: 24px;
+}
+
+.card .card-info .card-legend {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    min-height: 50px;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    background-color: white;
+    padding: 3px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.card .card-info .card-legend .time {
+    width: 20%;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 0.35rem;
+}
+
+.card .card-info .card-legend span {
+    display: block;
+    margin-left: 3%;
+    width: 77%;
+    font-size: 12px;
 }
