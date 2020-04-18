@@ -1,15 +1,24 @@
 {% load static %}
 
-<div class="sistem-notification">
-    <i class="fas fa-bell pointer"><span class="text-white bg-danger">2</span></i>
-</div>
-
-<div class="admin-notification">
-    <i class="fas fa-envelope pointer"><span class="text-white bg-danger">122</span></i>
-</div>
-
-<span class="bar"></span>
+<img src="{% static 'images/user.png' %}" alt="photo-perfil">
 
 <h1 class="user-name">Fulano de tal</h1>
 
-<img src="{% static 'images/user.png' %}" alt="photo-perfil">
+<div class="today">
+
+    <p><strong class="text-p">dd/mm</strong><strong class="text-se">/aaaa</strong></p>
+
+</div>
+
+
+<div class="notification">
+
+    <div class="sistem-notification">
+        <i class="fas fa-bell pointer"><span class="text-white bg-danger">2</span></i>
+    </div>
+    
+    <div class="admin-notification">
+        <i class="fas fa-envelope pointer"><span class="text-white bg-danger">122</span></i>
+    </div>
+
+</div>

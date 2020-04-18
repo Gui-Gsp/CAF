@@ -30,7 +30,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'django_extensions',
-    'sass_processor',
 
     'home',
     'client',
