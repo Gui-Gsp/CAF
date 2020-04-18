@@ -4,23 +4,9 @@
     
         <h1 class="card-title"><strong class="text-p">Salas</strong></h1>
 
-        <div class="search search-room">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Digite o nome de uma sala" aria-label="Filtro de sala" aria-describedby="search-room">
-                <div class="input-group-append">
-                    <button class="btn" type="button" id="search-room"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
+        {% include "client/components/search-field.html" with kind="room" type="text" placeholder="Nome da sala" label="room name" %}
 
-        <div class="search search-date">
-            <div class="input-group mb-3">
-                <input type="date" class="form-control" aria-label="Filtro de data" aria-describedby="search-room-by-date">
-                <div class="input-group-append">
-                    <button class="btn" type="button" id="search-room-by-date"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
+        {% include "client/components/search-field.html" with kind="date" type="date" label="date" %}
 
         <div class="card-legend">
 
