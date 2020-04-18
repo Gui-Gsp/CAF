@@ -7,6 +7,7 @@
 {% block link_css %}
     <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/rooms.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/check.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/booking.css' %}">
 {% endblock %}
@@ -15,13 +16,13 @@
 
         <ul class="aside-menu">
             
-            {% include "client/components/top-bar.html" %}
+            {% include "client/components/aside-bar.html" %}
 
         </ul>
 
-        <nav class="nav-bar">
+        <nav class="top-bar">
 
-            {% include "client/components/aside-bar.html" %}
+            {% include "client/components/top-bar.html" %}
 
         </nav>
 
@@ -33,11 +34,11 @@
 
             {% include "client/components/check.html" with kind='out' title='Check-out' %}
             
-            {% include "client/components/booking.html" with kind='past' title='Reservas passadas' %}
+            {% include "client/components/booking.html" with kind='past' title='Reservas passadas' amount=6 %}
 
-            {% include "client/components/booking.html" with kind='current' title='Reservas atuais' %}
+            {% include "client/components/booking.html" with kind='current' title='Reservas atuais' amount=4 %}
 
-            {% include "client/components/booking.html" with kind='warning' title='Reservas pendentes' %}
+            {% include "client/components/booking.html" with kind='warning' title='Reservas pendentes' amount=3 %}
 
         </main>
     

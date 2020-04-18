@@ -1,24 +1,30 @@
 {% load static %}
 
-<div class="search-bar">
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Digite o nome de uma sala" aria-label="Example text with button addon" aria-describedby="button-addon1">
-        <div class="input-group-append">
-            <button class="btn" type="button" id="button-addon1"><i class="fas fa-search"></i></button>
-        </div>
-    </div>
+<div class="logo-home">
+    <a href="{% url 'dashboard' %}"><img src="{% static 'images/dashboard-logo.png' %}" alt="home"></a>
 </div>
 
-<div class="sistem-notification">
-    <i class="fas fa-bell pointer"><span class="text-white bg-danger">2</span></i>
-</div>
+<hr class="line">
 
-<div class="admin-notification">
-    <i class="fas fa-envelope pointer"><span class="text-white bg-danger">122</span></i>
-</div>
+<li class="topic pointer"><i class="fas fa-user-tie"></i></i>Perfil</li>
 
-<span class="bar"></span>
+<hr class="line">
 
-<h1 class="user-name">Fulano de tal</h1>
+<li class="topic pointer" data-toggle="collapse" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-person-booth"></i>
+    <span class="text-center">Salas</span>
+    <i class="fas fa-chevron-right float-right"></i>
+    <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
+        <li class="subtopic"><i class="fas fa-list-ul"></i><span class="text-center">Todas</span></li>
+        <li class="subtopic"><i class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></li>
+        <li class="subtopic"><i class="fas fa-check-square"></i><span class="text-center">Reservadas</span></li>
+    </ul>
+</li>
 
-<img src="{% static 'images/user.png' %}" alt="photo-perfil">
+<hr class="line">
+
+<li class="topic pointer"><i class="fas fa-door-open"></i>Check-in</li>
+<li class="topic pointer"><i class="fas fa-door-closed"></i>Check-out</li>
+<li class="topic pointer"><i class="fas fa-info"></i>Reclamações</li>
+
+<hr class="line">

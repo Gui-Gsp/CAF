@@ -38,6 +38,10 @@
     background-color: var(--warning);
 }
 
+.bg-g {
+    background-color: var(--light-dark);
+}
+
 .text-p {
     color: var(--primary);
 }

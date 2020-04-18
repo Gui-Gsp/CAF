@@ -3,7 +3,7 @@
     grid-template-columns: 224px auto;
     grid-template-rows: 62px 150px;
     grid-template-areas: 
-    "aside-menu menu-top"
+    "aside-menu top-bar"
     "aside-menu content"
     ;
     position: relative;
@@ -22,8 +22,8 @@
     background-color: var(--primary);
 }
 
-.nav-bar {
-    grid-area: menu-top;
+.top-bar {
+    grid-area: top-bar;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
 }
 
