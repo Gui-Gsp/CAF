@@ -1,0 +1,13 @@
+.search {
+    min-width: 224px;
+}
+
+.search button {
+    background-color: var(--primary);
+    color: white;
+}
+
+.search button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}

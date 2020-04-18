@@ -1,6 +1,6 @@
-<div class="room card border-left-{{type}}">
+<a class="room pointer card border-left-{{type}}" href="{% url 'room' %}">
             
-    <h1 class="room-name">{{name}}</h1>
+    <h1 class="room-name"><strong>{{name}}</strong></h1>
 
     {% if info %}
 
@@ -26,10 +26,6 @@
 
         <p class="room-info room-date">dd/mm/aaaa</p>
 
-    {% else %}
-
-        <input type="date" class="room-info room-date" min="2020-01-01">
-
     {% endif %}
 
     <div class="content-hours">
@@ -48,4 +44,4 @@
         <div class="hour afternoon bg-{{st10}}"><strong>18</strong></div>
     </div>
 
-</div>
+</a>

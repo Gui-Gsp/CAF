@@ -1,0 +1,33 @@
+{% extends "client/common/base.html" %}
+
+{% load static %}
+
+{% block title %} Dashboard {% endblock  %}
+
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
+    <link rel="stylesheet" href="{% static 'style/common/search-field.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
+{% endblock %}
+
+{% block content %}
+
+        <ul class="aside-menu">
+            
+            {% include "client/components/aside-bar.html" %}
+
+        </ul>
+
+        <nav class="top-bar">
+
+            {% include "client/components/top-bar.html" %}
+
+        </nav>
+
+        <main class="content-dashboard p-5">
+
+            {% include "client/components/room.html" with name="Nome da sala" type='success' cap="x" obs="'OBS'" info=True st1='su' st2='su' st3='su' st4='su' st5='su' st6='su' st7='su' st8='su' st9='su' st10='su' %}
+
+        </main>
+    
+{% endblock  %}

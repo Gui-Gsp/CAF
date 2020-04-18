@@ -4,20 +4,6 @@
     padding: 10px;
 }
 
-.top-bar .search-bar {
-    margin-right: auto;
-}
-
-.top-bar .search-bar button {
-    background-color: var(--primary);
-    color: white;
-}
-
-.top-bar .search-bar button:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
-
 .top-bar .sistem-notification {
     margin: auto 15px;
 }
