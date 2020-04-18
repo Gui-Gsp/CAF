@@ -15,6 +15,15 @@
     color: var(--primary);
 }
 
+.aside-menu .topic a {
+    display: block;
+    width: 100%;
+}
+
+.aside-menu .topic a:hover {
+    text-decoration: none;
+}
+
 .aside-menu .topic i {
     display: inline-block;
     text-align: center;
