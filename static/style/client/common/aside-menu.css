@@ -16,11 +16,13 @@
 }
 
 .aside-menu .topic a {
+    color: #fff;
     display: block;
     width: 100%;
 }
 
 .aside-menu .topic a:hover {
+    color: var(--primary);
     text-decoration: none;
 }
 
