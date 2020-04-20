@@ -30,17 +30,22 @@
         <main class="content-dashboard p-5">
 
             {% if booking_msg %}
-            <div class="container container-alert">
-                <div class="row">
-                    <div class="offset-5">
-                        <div class="alert alert-success alert-success-booking" role="alert">
-                            {{ booking_msg }}
+                <div class="container container-alert">
+                    <div class="row">
+                        <div class="offset-5">
+                            <div class="alert alert-success alert-success-booking" role="alert">
+                                {{ booking_msg }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             {% endif %}
 
+            <div id="title-dashboard" class="w-100">
+
+                <h1><strong class="text-p">Dash</strong><strong class="text-se">board</strong></h1>
+        
+            </div>
 
             {% include "client/components/rooms.html" %}
             

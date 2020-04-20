@@ -8,3 +8,12 @@ def get_room(request):
 
 def booking(request):
     return render(request, 'client/index.html', {'booking_msg': "Sua reserva foi feita com sucesso!"})
+
+def last_booking(request):
+    return render(request, 'client/pages/last_booking/index.html', {'booking_msg': "Sua reserva foi feita com sucesso!"})
+
+def current_booking(request):
+    return render(request, 'client/pages/index.html', {'booking_msg': "Sua reserva foi feita com sucesso!"})
+
+def pending_booking(request):
+    return render(request, 'client/index.html', {'booking_msg': "Sua reserva foi feita com sucesso!"})

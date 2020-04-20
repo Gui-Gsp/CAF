@@ -22,11 +22,11 @@
 
     <div class="card-rooms">
     
-        {% include "client/components/room.html" with name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
+        {% include "client/components/room.html" with route="last_booking" name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
         
-        {% include "client/components/room.html" with name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
+        {% include "client/components/room.html" with route="current_booking" name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
         
-        {% include "client/components/room.html" with name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
+        {% include "client/components/room.html" with route="pending_booking" name="Nome da sala" readonly=True st1='g' st2='g' st3='g' st4='su' st5='su' st6='su' st7='g' st8='g' st9='g' st10='g' %}
 
     </div>
 
