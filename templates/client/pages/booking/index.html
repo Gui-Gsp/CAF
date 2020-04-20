@@ -6,7 +6,6 @@
 
 {% block link_css %}
     <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
-    <link rel="stylesheet" href="{% static 'style/common/search-field.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
 {% endblock %}
 
@@ -26,8 +25,17 @@
 
         <main class="content-dashboard p-5">
 
-            {% include "client/components/room.html" with name="Nome da sala" type='success' cap="x" obs="'OBS'" info=True st1='su' st2='su' st3='su' st4='su' st5='su' st6='su' st7='su' st8='su' st9='su' st10='su' %}
+            <div class="container card">
+
+                {% include "client/pages/booking/dashboard-content.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
+
+            </div>
 
         </main>
     
+{% endblock  %}
+
+
+{% block scripts_js %}
+        <script src="{% static 'js/client/animations/choose-time.js' %}"></script>
 {% endblock  %}

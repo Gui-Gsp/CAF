@@ -6,10 +6,10 @@
 
     <hr>
 
-    <p class="room-info room-cap">capacidade: {{cap}}</p>
-    <p class="room-info room-obs">observações: {{obs}}</p>
+    <p class="room-info room-cap"><strong>Capacidade:</strong> {{cap}}</p>
+    <p class="room-info room-obs"><strong>Observações:</strong> {{obs}}</p>
         <ol>
-            <p class="room-info room-equips">equipamentos:</p>
+            <p class="room-info room-equips"><strong>Conteúdo:</strong></p>
         
             <li class="room-info room-item">Data show</li>
             <li class="room-info room-item">Mesa para 4 pessoas</li>
@@ -29,19 +29,17 @@
     {% endif %}
 
     <div class="content-hours">
-        <div class="hour morning bg-{{st1}}"><strong>8</strong></div>
-        <div class="hour morning bg-{{st2}}"><strong>9</strong></div>
-        <div class="hour morning bg-{{st3}}"><strong>10</strong></div>
-        <div class="hour morning bg-{{st4}}"><strong>11</strong></div>
-        <div class="hour morning bg-{{st5}}"><strong>12</strong></div>
+        <div class="hour morning bg-{{st1}} border-right border-right-dark"><strong>8-9</strong></div>
+        <div class="hour morning bg-{{st2}} border-right border-right-dark"><strong>9-10</strong></div>
+        <div class="hour morning bg-{{st3}} border-right border-right-dark"><strong>10-11</strong></div>
+        <div class="hour morning bg-{{st4}} border-right border-right-dark"><strong>11-12</strong></div>
         
         <div class="hour bg-w"><strong>//</strong></div>
 
-        <div class="hour afternoon bg-{{st6}}"><strong>14</strong></div>
-        <div class="hour afternoon bg-{{st7}}"><strong>15</strong></div>
-        <div class="hour afternoon bg-{{st8}}"><strong>16</strong></div>
-        <div class="hour afternoon bg-{{st9}}"><strong>17</strong></div>
-        <div class="hour afternoon bg-{{st10}}"><strong>18</strong></div>
+        <div class="hour afternoon bg-{{st6}} border-right border-right-dark"><strong>14-15</strong></div>
+        <div class="hour afternoon bg-{{st7}} border-right border-right-dark"><strong>15-16</strong></div>
+        <div class="hour afternoon bg-{{st8}} border-right border-right-dark"><strong>16-17</strong></div>
+        <div class="hour afternoon bg-{{st9}} border-right border-right-dark"><strong>17-18</strong></div>
     </div>
 
 </a>

@@ -6,4 +6,6 @@ urlpatterns = [
     path('', views.index, name="dashboard"),
     # REMEMBER id here
     path('sala', views.get_room, name="room"),
+    # REMEMBER id here
+    path('reserva', views.booking, name="make_booking"),
 ]

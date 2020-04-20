@@ -29,6 +29,19 @@
 
         <main class="content-dashboard p-5">
 
+            {% if booking_msg %}
+            <div class="container container-alert">
+                <div class="row">
+                    <div class="offset-5">
+                        <div class="alert alert-success alert-success-booking" role="alert">
+                            {{ booking_msg }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+
             {% include "client/components/rooms.html" %}
             
             {% include "client/components/check.html" with kind='in' title='Check-in'%}
@@ -43,4 +56,11 @@
 
         </main>
     
+{% endblock  %}
+
+
+{% block scripts_js %}
+
+        <script src="{% static 'js/client/animations/hide.js' %}"></script>
+
 {% endblock  %}

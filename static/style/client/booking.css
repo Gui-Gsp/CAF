@@ -7,6 +7,10 @@
     margin-right: 0;
 }
 
+.content-booking .card-rooms a {
+    width: 100%;
+}
+
 .content-booking .filter-date {
     margin: auto;
     max-width: 225px;

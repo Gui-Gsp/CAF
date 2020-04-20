@@ -59,6 +59,7 @@
 .room .content-hours .hour {
     height: 15px;
     width: 100%;
+    white-space: nowrap;
 }
 
 .room .content-hours .hour:first-child {
