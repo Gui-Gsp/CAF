@@ -48,7 +48,8 @@
     margin: 0 20px;
 }
 
-.room .content-hours {
+.room .content-hours, 
+.room-hours .content-hours {
     height: 15px;
     border: 1px solid #CAC9C9;
     border-radius: 5px;
@@ -56,23 +57,27 @@
     justify-content: center;
 }
 
-.room .content-hours .hour {
+.room .content-hours .hour,
+.room-hours .content-hours .hour {
     height: 15px;
     width: 100%;
     white-space: nowrap;
 }
 
-.room .content-hours .hour:first-child {
+.room .content-hours .hour:first-child,
+.room-hours .content-hours .hour:first-child{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.room .content-hours .hour:last-child {
+.room .content-hours .hour:last-child,
+.room-hours .content-hours .hour:last-child{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.room .content-hours strong {
+.room .content-hours strong,
+.room-hours .content-hours strong{
     display: block;
     text-align: center;
     align-self: center;

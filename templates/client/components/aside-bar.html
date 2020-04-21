@@ -16,10 +16,13 @@
 
 <hr class="line">
 
-<li class="topic pointer" data-toggle="collapse" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
-    <strong><i class="fas fa-person-booth"></i>
+<li class="topic pointer" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+    <strong class="fas fa-person-booth">
     <span class="text-center">Salas</span></strong>
-    <i class="fas fa-chevron-right float-right"></i>
+    <strong class="fas fa-chevron-right float-right"></strong>
+</li>
+
+<li class="topic pointer">
     <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
         <li class="subtopic"><strong><i class="fas fa-list-ul"></i><span class="text-center">Todas</span></strong></li>
         <li class="subtopic"><strong><i class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></strong></li>
