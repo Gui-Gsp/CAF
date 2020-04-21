@@ -70,6 +70,16 @@
     cursor: pointer;
 }
 
+.activated {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.activated strong, 
+.activated span {
+    color: var(--primary);
+}
+
 ul {
     margin: 0;
     padding: 0;

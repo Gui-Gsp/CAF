@@ -8,6 +8,9 @@
     color: #fff;
     transition: background-color 0.4s, color 0.3s;
     margin: 10px 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .aside-menu .topic:hover {
@@ -26,36 +29,42 @@
     text-decoration: none;
 }
 
-.aside-menu .activated {
-    background-color: var(--secondary);
-    color: var(--primary);
+.aside-menu .topic a strong {
+    margin-left: auto;
 }
 
-.aside-menu .activated strong {
-    color: var(--primary);
+.aside-menu .topic a span {
+    margin-left: 10px;
+    font-weight: bold;
 }
 
-.aside-menu .topic i {
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    margin: 5px;
-}
-
-.aside-menu .topic .subtopics {
+.aside-menu .subtopics {
+    margin: -12px -7px;
     padding: 15px;
 }
 
-.aside-menu .topic .subtopics .subtopic {
+.aside-menu .subtopics .subtopic {
     margin: 5px;
     font-size: 14px;
+}
+
+.aside-menu .subtopics .subtopic a {
+    display: block;
+    width: 100%;
+    margin-right: 5px;
     transition: color 0.4s;
+    color: black;
+    padding: 5px;
 }
 
-.aside-menu .topic .subtopics .subtopic:hover {
+.aside-menu .subtopics .subtopic a:hover {
     color: var(--primary);
+    background-color: var(--secondary);
 }
 
+.aside-menu .subtopics .subtopic a span {
+    margin-left: 5px;
+}
 .aside-menu .line {
     width: 100%;
 }

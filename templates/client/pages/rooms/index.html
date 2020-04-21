@@ -1,0 +1,57 @@
+{% extends "client/common/base.html" %}
+
+{% load static %}
+
+{% block title %} Dashboard {% endblock  %}
+
+{% block link_css %}
+    <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/rooms.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/justify-field.css' %}">
+{% endblock %}
+
+{% block content %}
+
+        <ul class="aside-menu">
+            
+            {% include "client/components/aside-bar.html" %}
+
+        </ul>
+
+        <nav class="top-bar">
+
+            {% include "client/components/top-bar.html" %}
+
+        </nav>
+
+        <main class="content-dashboard p-5">
+            
+            {% if message %}
+                <div class="container container-alert">
+                    <div class="row">
+                        <div class="offset-5">
+                            <div class="alert alert-success alert-success-booking" role="alert">
+                                {{ message }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            <div id="title-dashboard" class="w-100">
+
+                <h1><strong class="text-p">Sa</strong><strong class="text-se">las</strong></h1>
+            
+            </div>
+
+            {% include "client/components/rooms.html" %}
+
+        </main>
+    
+{% endblock  %}
+
+
+{% block scripts_js %}
+        <script src="{% static 'js/client/animations/hide.js' %}"></script>
+{% endblock  %}
