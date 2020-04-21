@@ -1,0 +1,18 @@
+.justify-field {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-field form {
+    margin: 10px;
+}
+
+.justify-field form textarea {
+    resize: none;
+    border-radius: 5px;
+    transition: border-radius .5s;
+}
+
+.justify-field form textarea:hover{
+    border-radius: 15px;
+}

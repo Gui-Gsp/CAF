@@ -6,23 +6,23 @@
 
 <hr class="line">
 
-<li class="topic pointer"><a href="{% url 'dashboard' %}"><strong>
+<li class="topic pointer {% if home %} activated {% endif %}"><a href="{% url 'dashboard' %}"><strong>
 <i class="fas fa-home"></i></i>Home</strong></a></li>
 
 <hr class="line">
 
-<li class="topic pointer"><strong>
+<li class="topic pointer {% if perfil %} activated {% endif %}"><strong>
 <i class="fas fa-user-tie"></i></i>Perfil</strong></li>
 
 <hr class="line">
 
-<li class="topic pointer" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+<li class="topic pointer {% if rooms %} activated {% endif %}" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
     <strong class="fas fa-person-booth">
     <span class="text-center">Salas</span></strong>
     <strong class="fas fa-chevron-right float-right"></strong>
 </li>
 
-<li class="topic pointer">
+<li class="topic pointer {% if perfil %} activated {% endif %}">
     <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
         <li class="subtopic"><strong><i class="fas fa-list-ul"></i><span class="text-center">Todas</span></strong></li>
         <li class="subtopic"><strong><i class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></strong></li>
@@ -32,9 +32,9 @@
 
 <hr class="line">
 
-<li class="topic pointer"><strong><i class="fas fa-door-open"></i>Check-in</strong></li>
-<li class="topic pointer"><strong><i class="fas fa-door-closed"></i>Check-out</strong></li>
-<li class="topic pointer"><strong><i class="fas fa-info"></i>Reclamações</strong></li>
+<li class="topic pointer {% if Check_in %} activated {% endif %}"><strong><i class="fas fa-door-open"></i>Check-in</strong></li>
+<li class="topic pointer {% if Check_out %} activated {% endif %}"><strong><i class="fas fa-door-closed"></i>Check-out</strong></li>
+<li class="topic pointer {% if issues %} activated {% endif %}"><strong><i class="fas fa-info"></i>Reclamações</strong></li>
 <li class="topic pointer"><a href="{% url 'client_logout' %}" class="text-danger"><strong><i class="fas fa-sign-out-alt"></i>Sair</strong></a></li>
 
 <hr class="line">

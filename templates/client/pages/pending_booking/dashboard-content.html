@@ -89,3 +89,21 @@
 </div>
 
 {% endif %}
+
+<hr>
+
+<div class="justify-field">
+
+    <h2 class="w-100">Pendências</h2>
+
+    <form action="{% url 'justify' %}" class="w-100">
+
+        <label for="pending_1" class="pending-title w-100">1 -{{ motivo }} | data: dd/mm/aaaa | hora: HH - HH</label>
+
+        <textarea placeholder="    Digite aqui sua justificativa" class="w-100" id="pending_1" maxlength=280 rows="3"></textarea>
+
+        <button type="submit" class="btn btn-success">enviar</button>
+
+    </form>
+
+</div>

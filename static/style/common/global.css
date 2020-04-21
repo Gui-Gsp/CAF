@@ -4,10 +4,6 @@
     font-family: 'Nunito', 'Gotu', sans-serif;
 }
 
-button {
-    border: none;
-}
-
 :root {
     --primary: #4e73df;
     --danger: #DC0909;
@@ -78,6 +74,19 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .content-column {

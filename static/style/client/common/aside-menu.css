@@ -26,6 +26,15 @@
     text-decoration: none;
 }
 
+.aside-menu .activated {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.aside-menu .activated strong {
+    color: var(--primary);
+}
+
 .aside-menu .topic i {
     display: inline-block;
     text-align: center;

@@ -17,7 +17,7 @@
 
         <ul class="aside-menu">
             
-            {% include "client/components/aside-bar.html" %}
+            {% include "client/components/aside-bar.html" with home=True %}
 
         </ul>
 
@@ -29,12 +29,12 @@
 
         <main class="content-dashboard p-5">
 
-            {% if booking_msg %}
+            {% if message %}
                 <div class="container container-alert">
                     <div class="row">
                         <div class="offset-5">
                             <div class="alert alert-success alert-success-booking" role="alert">
-                                {{ booking_msg }}
+                                {{ message }}
                             </div>
                         </div>
                     </div>
@@ -49,15 +49,15 @@
 
             {% include "client/components/rooms.html" %}
             
-            {% include "client/components/check.html" with kind='in' title='Check-in'%}
+            {% include "client/components/check.html" with kind='in' route="check-in" title='Check-in'%}
 
-            {% include "client/components/check.html" with kind='out' title='Check-out' %}
+            {% include "client/components/check.html" with kind='out' route="check-out" title='Check-out' %}
             
-            {% include "client/components/booking.html" with kind='past' title='Reservas passadas' amount=6 %}
+            {% include "client/components/booking.html" with kind='past' route="last_booking" title='Reservas passadas' %}
 
-            {% include "client/components/booking.html" with kind='current' title='Reservas atuais' amount=4 %}
+            {% include "client/components/booking.html" with kind='current' route="current_booking" title='Reservas atuais' %}
 
-            {% include "client/components/booking.html" with kind='warning' title='Reservas pendentes' amount=3 %}
+            {% include "client/components/booking.html" with kind='warning' route="pending_booking" title='Reservas pendentes' %}
 
         </main>
     
