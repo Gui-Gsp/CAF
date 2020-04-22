@@ -38,6 +38,16 @@
     font-weight: bold;
 }
 
+.aside-menu .topic .fa-chevron-right,
+.aside-menu .topic .fa-chevron-down {
+    margin-left: auto;
+}
+
+.aside-menu .topic span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 .aside-menu .subtopics {
     margin: -12px -7px;
     padding: 15px;
@@ -65,6 +75,7 @@
 .aside-menu .subtopics .subtopic a span {
     margin-left: 5px;
 }
+
 .aside-menu .line {
     width: 100%;
 }

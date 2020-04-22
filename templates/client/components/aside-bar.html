@@ -24,7 +24,7 @@
 
 <hr class="line">
 
-<li class="topic pointer {% if rooms %} activated {% endif %}" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+<li class="topic pointer" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
     <strong class="fas fa-person-booth"></strong>
     <span class="text-center">Salas</span>
     <strong class="fas fa-chevron-right"></strong>
@@ -56,7 +56,7 @@
 
 <li class="topic pointer {% if issues %} activated {% endif %}">
     <a href="{% url 'dashboard' %}">
-        <strong class="fas fa-info" style="margin-left:14px"></strong>
+        <strong class="fas fa-info ml-2"></strong>
         <span class="text-center">Reclamações</span>
     </a>
 </li>
