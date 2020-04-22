@@ -3,6 +3,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'client/index.html')
 
+def edit(request):
+    return render(request, 'client/pages/profile/index.html', {'message': "Perfil atualizado com sucesso"})
+
 def checkin(request):
     return render(request, 'client/index.html', {'message': "Check-in realizado com successo"})
 
