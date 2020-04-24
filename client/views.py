@@ -4,7 +4,10 @@ def index(request):
     return render(request, 'client/index.html')
 
 def edit(request):
-    return render(request, 'client/pages/profile/index.html', {'message': "Perfil atualizado com sucesso"})
+    return render(request, 'client/pages/profile/index.html')
+
+def update(request):
+    return render(request, 'client/index.html', {'message': "Perfil atualizado com sucesso"})
 
 def checkin(request):
     return render(request, 'client/index.html', {'message': "Check-in realizado com successo"})
