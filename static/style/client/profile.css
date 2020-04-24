@@ -1,0 +1,72 @@
+#card-profile .img-avatar {
+    width: 150px;
+    max-height: 150px;
+    margin: auto;
+    position: relative;
+    transition: border 0.5s, border-raduis 0.8s;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#card-profile .img-avatar:hover {
+    border-radius: 100%;
+    background-color: rgba(75, 115, 223, 0.6);
+    border: 2px solid var(--secondary);
+}
+
+#card-profile .img-avatar i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 3.125rem;
+    color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+#card-profile .img-avatar:hover i {
+    opacity: 0.3;
+}
+
+#card-profile .img-avatar img {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+#card-profile .btn-m,
+#card-profile .btn-f {
+    transition: background-color 0.6s;
+}
+
+#card-profile .btn:hover {
+    background-color: var(--success);
+}
+
+#card-profile .input-radios {
+    display: none;
+}
+
+#card-profile .input-buttons {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#card-profile .input-buttons .btn {
+    border: 1px solid var(--light-dark);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,6 +4,10 @@
     font-family: 'Nunito', 'Gotu', sans-serif;
 }
 
+p,label {
+    margin: 0;
+}
+
 :root {
     --primary: #4e73df;
     --danger: #DC0909;
@@ -39,6 +43,34 @@
 }
 
 .bg-g {
+    background-color: var(--light-dark);
+}
+
+.h-p:hover {
+    background-color: var(--primary);
+}
+
+.h-d:hover {
+    background-color: var(--danger);
+}
+
+.h-se:hover {
+    background-color: var(--secondary);
+}
+
+.h-su:hover {
+    background-color: var(--success);
+}
+
+.h-i:hover {
+    background-color: var(--info);
+}
+
+.h-w:hover {
+    background-color: var(--warning);
+}
+
+.h-g:hover {
     background-color: var(--light-dark);
 }
 

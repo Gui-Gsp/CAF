@@ -6,14 +6,14 @@
 
 {% block link_css %}
     <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
-    <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/profile.css' %}">
 {% endblock %}
 
 {% block content %}
 
         <ul class="aside-menu">
             
-            {% include "client/components/aside-bar.html" %}
+            {% include "client/components/aside-bar.html" with profile=True %}
 
         </ul>
 
@@ -32,13 +32,9 @@
             </div>
 
             <div class="container">
-
-                <form action="" class="card">
-
+                <form action="" class="card" id="card-profile">
                     {% include "client/pages/profile/dashboard-content.html" %}
-
                 </form>
-
             </div>
 
         </main>
@@ -47,5 +43,5 @@
 
 
 {% block scripts_js %}
-
+    <script src="{% static 'js/client/events/profile/bind-click.js' %}"></script>
 {% endblock  %}
