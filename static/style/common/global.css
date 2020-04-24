@@ -9,9 +9,9 @@ p,label {
 }
 
 :root {
-    --primary: #4e73df;
+    --primary: #1E4D59;
     --danger: #DC0909;
-    --secondary: #FFD12F;
+    --secondary: #D9674E;
     --success: #1cc88a;
     --info: #36b9cc;
     --warning: #f6c23e;
@@ -19,83 +19,83 @@ p,label {
 }
 
 .bg-p {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 
 .bg-d {
-    background-color: var(--danger);
+    background-color: var(--danger) !important;
 }
 
 .bg-se {
-    background-color: var(--secondary);
+    background-color: var(--secondary) !important;
 }
 
 .bg-su {
-    background-color: var(--success);
+    background-color: var(--success) !important;
 }
 
 .bg-i {
-    background-color: var(--info);
+    background-color: var(--info) !important;
 }
 
 .bg-w {
-    background-color: var(--warning);
+    background-color: var(--warning) !important;
 }
 
 .bg-g {
-    background-color: var(--light-dark);
+    background-color: var(--light-dark) !important;
 }
 
 .h-p:hover {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 
 .h-d:hover {
-    background-color: var(--danger);
+    background-color: var(--danger) !important;
 }
 
 .h-se:hover {
-    background-color: var(--secondary);
+    background-color: var(--secondary) !important;
 }
 
 .h-su:hover {
-    background-color: var(--success);
+    background-color: var(--success) !important;
 }
 
 .h-i:hover {
-    background-color: var(--info);
+    background-color: var(--info) !important;
 }
 
 .h-w:hover {
-    background-color: var(--warning);
+    background-color: var(--warning) !important;
 }
 
 .h-g:hover {
-    background-color: var(--light-dark);
+    background-color: var(--light-dark) !important;
 }
 
 .text-p {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .text-d {
-    color: var(--danger);
+    color: var(--danger) !important;
 }
 
 .text-se {
-    color: var(--secondary);
+    color: var(--secondary) !important;
 }
 
 .text-su {
-    color: var(--success);
+    color: var(--success) !important;
 }
 
 .text-i {
-    color: var(--info);
+    color: var(--info) !important;
 }
 
 .text-w {
-    color: var(--warning);
+    color: var(--warning) !important;
 }
 
 .pointer:hover {

@@ -16,6 +16,7 @@
     text-decoration: none;
     color: inherit;
     transform: translateY(-8px);
+    color: white;
     background-color: var(--primary);
 }
 
@@ -50,6 +51,7 @@
 
 .room .content-hours, 
 .room-hours .content-hours {
+    color: black;
     height: 15px;
     border: 1px solid #CAC9C9;
     border-radius: 5px;

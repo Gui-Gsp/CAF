@@ -10,31 +10,39 @@
 
     <main class="content">
         <div class="image-client">
-            <img src="{% static 'images/logo_client.jpg' %}" alt="">
+            <img src="{% static 'images/login/image.jpeg' %}" alt="">
         </div>
         <div class="form-content">
-            <h1><strong class="text-p">Faça o</strong><strong class="text-se"> login</strong></h1>
-            <form action=" {% url 'dashboard' %} ">
-                <div class="form-group">
-                    <label for="user"><i class="fas fa-user"></i></label>
-                    <input type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Digite seu usuário">
-                </div>
-                <div class="form-group">
-                    <label for="psw"><i class="fas fa-key"></i></label>
-                    <input type="password" class="form-control" id="psw" placeholder="Digite sua senha">
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
-                </div>
 
-                <input type="submit" class="btn btn-primary" value="Login">
-            </form>
+            <div class="logo-login">
+                <img src="{% static 'images/logo_client.jpg' %}" alt="">
+            </div>
 
-            <a href="{% url 'home' %}"><input class="btn btn-warning" value="Voltar"></a>
+            <div class="box">
+                <h1><strong class="text-white">Faça o login</strong></h1>
+                <form action=" {% url 'dashboard' %} ">
+                    <div class="form-group">
+                        <label for="user"><i class="fas fa-user"></i></label>
+                        <input type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Digite seu usuário">
+                    </div>
+                    <div class="form-group">
+                        <label for="psw"><i class="fas fa-key"></i></label>
+                        <input type="password" class="form-control" id="psw" placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
+                    </div>
 
-            <a href=""><p>Esqueci minha senha</p></a>
-            <a href=""><p>Criar conta</p></a>
+                    <input type="submit" class="btn btn-success" value="Login">
+                </form>
+
+                <a href="{% url 'home' %}"><input class="btn btn-danger" value="Voltar"></a>
+
+                <a href=""><p>Esqueci minha senha</p></a>
+                <a href=""><p>Criar conta</p></a>
+            </div>
+
         </div>
 
     </main>
