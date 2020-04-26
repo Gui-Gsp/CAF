@@ -13,6 +13,8 @@
     transition: border-radius .5s;
 }
 
-.justify-field form textarea:hover{
+.justify-field form textarea:hover,
+.justify-field form textarea:focus {
     border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
 }

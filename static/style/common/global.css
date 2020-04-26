@@ -11,6 +11,7 @@ p,label {
 :root {
     --primary: #1E4D59;
     --danger: #DC0909;
+    --tertiary: #011F26;
     --secondary: #D9674E;
     --success: #1cc88a;
     --info: #36b9cc;

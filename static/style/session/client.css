@@ -1,5 +1,5 @@
 .content {
-    height: 35.8rem;
+    height: 40rem;
     align-items: flex-start;
     overflow: hidden;
     background-color: var(--secondary);
@@ -34,8 +34,9 @@
 
 .content .form-content .box {
     margin: auto 10%;
+    padding: 22px 15%;
     width: 80%;
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     border-radius: 1rem;
     transition: border-radius 0.6s, box-shadow 0.8s;
     color: white;
@@ -85,11 +86,10 @@
     margin: 30px 5%;
     width: 90%;
     height: 50px;
-    border-radius: 2rem;
+    border-radius: 0.6rem;
 }
 
 .content a {
-    display: block;
     width: 100%;
     text-align: center;
     color: white;
