@@ -17,30 +17,37 @@
     color: var(--primary);
 }
 
-.aside-menu .topic a {
+.aside-menu .topic strong {
     color: #fff;
     display: block;
     padding: 5px;
+    margin-left: 5px;
     width: 100%;
 }
 
-.aside-menu .topic a:hover {
+.aside-menu .topic a {
+    width: 100%;
+}
+
+.aside-menu .topic a span {
+    color: #fff;
+}
+
+.aside-menu .topic:hover strong,
+.aside-menu .topic:hover a strong span {
     color: var(--primary);
     text-decoration: none;
 }
 
-.aside-menu .topic a strong {
-    margin-left: auto;
-}
-
-.aside-menu .topic a span {
+.aside-menu .topic strong span,
+.aside-menu .topic a strong span {
     margin-left: 10px;
     font-weight: bold;
 }
 
 .aside-menu .topic .fa-chevron-right,
 .aside-menu .topic .fa-chevron-down {
-    margin-left: auto;
+    text-align: end;
 }
 
 .aside-menu .topic span {

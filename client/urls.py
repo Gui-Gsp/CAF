@@ -4,7 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="dashboard"),
-    path('perfil', views.edit, name="profile"),
     path('updated', views.update, name="client_update"),
     # REMEMBER id
     path('check-in', views.checkin, name="check-in"),

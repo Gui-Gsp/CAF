@@ -6,63 +6,51 @@
 
 <hr class="line">
 
-<li class="topic pointer {% if home %} activated {% endif %}">
+<li id="list-home" class="topic pointer">
     <a href="{% url 'dashboard' %}">
-        <strong class="fas fa-home"></strong>
-        <span class="text-center">Home</span>
+        <strong class="fas fa-home"><span class="text-center">Home</span></strong>
     </a>
 </li>
 
 <hr class="line">
 
-<li class="topic pointer {% if profile %} activated {% endif %}" onclick="showProfile()">
-    <strong class="fas fa-user-tie"></strong>
-    <span class="text-center">Perfil</span>
+<li class="topic pointer" id="list-profile" onclick="showProfile()">
+    <strong class="fas fa-user-tie"><span class="text-center">Perfil</span></strong>
 </li>
 
 <hr class="line">
 
-<li class="topic pointer" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
-    <strong class="fas fa-person-booth"></strong>
-    <span class="text-center">Salas</span>
+<li class="topic pointer" id="list-rooms" data-toggle="collapse" onclick="toogleIcon(this)" data-target="#room" aria-controls="room" aria-expanded="false" aria-label="Toggle navigation">
+    <strong class="fas fa-person-booth"><span class="text-center">Salas</span></strong>
     <strong class="fas fa-chevron-right"></strong>
 </li>
 
 <li class="subtopics">
     <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
-        <li class="subtopic pointer" onclick="showRooms()"><strong class="fas fa-list-ul"><span class="text-center">Todas</span></strong></li>
-        <li class="subtopic pointer" onclick="showHistoric()"><strong class="fas fa-calendar-alt"><span class="text-center">Histórico de salas</span></strong></li>
-        <li class="subtopic pointer" onclick="showBooking()"><strong class="fas fa-check-square"><span class="text-center">Reservadas</span></strong></li>
+        <li class="subtopic pointer" id="sublist-rooms" onclick="showRooms()"><strong class="fas fa-list-ul"><span class="text-center">Todas</span></strong></li>
+        <li class="subtopic pointer" id="sublist-historic" onclick="showHistoric()"><strong class="fas fa-calendar-alt"><span class="text-center">Histórico de salas</span></strong></li>
+        <li class="subtopic pointer" id="sublist-booking" onclick="showBooking()"><strong class="fas fa-check-square"><span class="text-center">Reservadas</span></strong></li>
+        <li class="subtopic pointer" id="sublist-warning" onclick="showWarnings()"><strong class="fas fa-exclamation-triangle"><span class="text-center">Pedentes</span></strong></li>
     </ul>
 </li>
 
 <hr class="line">
 
-<li class="topic pointer {% if Check_in %} activated {% endif %}">
-    <a href="{% url 'dashboard' %}">
-        <strong class="fas fa-door-open"></strong>
-        <span class="text-center">Check-in</span>
-    </a>
+<li class="topic pointer" id="list-check-in" onclick="showCheckIn()">
+    <strong class="fas fa-door-open"><span class="text-center">Check-in</span></strong>
 </li>
 
-<li class="topic pointer {% if Check_out %} activated {% endif %}">
-    <a href="{% url 'dashboard' %}">
-        <strong class="fas fa-door-closed"></strong>
-        <span class="text-center">Check-out</span>
-    </a>
+<li class="topic pointer" id="list-check-out" onclick="showCheckOut()">
+    <strong class="fas fa-door-closed"><span class="text-center">Check-out</span></strong>
 </li>
 
-<li class="topic pointer {% if issues %} activated {% endif %}">
-    <a href="{% url 'dashboard' %}">
-        <strong class="fas fa-user-cog"></strong>
-        <span class="text-center">Configurações</span>
-    </a>
+<li class="topic pointer" id="list-historic" onclick="showHistoric()">
+    <strong class="fas fa-user-cog"><span class="text-center">Configurações</span></strong>
 </li>
 
 <li class="topic pointer">
-    <a href="{% url 'client_logout' %}" class="text-danger">
-        <strong class="fas fa-sign-out-alt"></strong>
-        <span class="text-center">Sair</span>
+    <a href="{% url 'client_logout' %}">
+        <strong class="fas fa-sign-out-alt text-danger"><span class="text-center text-danger">Sair</span></strong>
     </a>
 </li>
 
