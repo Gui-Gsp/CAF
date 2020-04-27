@@ -33,8 +33,8 @@
 <li class="subtopics">
     <ul class="collapse dropdown bg-white text-dark subtopics" id="room">
         <li class="subtopic"><a href="{% url 'rooms' %}"><strong class="fas fa-list-ul"></i><span class="text-center">Todas</span></strong></a></li>
-        <li class="subtopic"><a href="{% url 'rooms' %}"><strong class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></strong></a></li>
-        <li class="subtopic"><a href="{% url 'rooms' %}"><strong class="fas fa-check-square"></i><span class="text-center">Reservadas</span></strong></a></li>
+        <li class="subtopic pointer" onclick="showHistoric()"><a><strong class="fas fa-calendar-alt"></i><span class="text-center">Histórico de salas</span></strong></a></li>
+        <li class="subtopic" onclick="showBooking()"><a><strong class="fas fa-check-square"></i><span class="text-center">Reservadas</span></strong></a></li>
     </ul>
 </li>
 
