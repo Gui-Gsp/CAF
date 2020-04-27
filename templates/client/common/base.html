@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'style/bootstrap/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'style/fontawesome/css/all.css' %}">
         <link rel="stylesheet" href="{% static 'style/common/global.css' %}">
+        <link rel="stylesheet" href="{% static 'style/common/modal.css' %}">
         <link rel="stylesheet" href="{% static 'style/client/common/grid.css' %}">
         <link rel="stylesheet" href="{% static 'style/client/common/aside-menu.css' %}">
         <link rel="stylesheet" href="{% static 'style/client/common/nav-bar.css' %}">
@@ -37,11 +38,12 @@
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/client/animations/icon-aside-bar.js' %}"></script>
-        
-        {% block scripts_js %}
-        
-        {% endblock  %}
+        <script src="{% static 'js/client/animations/iconAsideBar.js' %}"></script>
+        <script src="{% static 'js/client/animations/hide.js' %}"></script>
+        <script src="{% static 'js/client/pages/screens.js' %}"></script>
+        <script src="{% static 'js/client/events/bindClick.js' %}"></script>
+        <script src="{% static 'js/client/events/modal.js' %}"></script>
+        <script src="{% static 'js/client/animations/chooseTime.js' %}"></script>
 
     </body>
 </html>

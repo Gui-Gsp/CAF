@@ -1,53 +1,101 @@
-{% extends "client/common/base.html" %}
+<div class="row">
 
-{% load static %}
+    <div class="col-12">
 
-{% block title %} Dashboard {% endblock  %}
+        <div class="room-name">
 
-{% block link_css %}
-    <link rel="stylesheet" href="{% static 'style/common/card.css' %}">
-    <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
-{% endblock %}
+            <h1 class="text-center"><strong class="text-p">{{room_name}}</strong></h1>
 
-{% block content %}
+        </div>
 
-        <ul class="aside-menu">
-            
-            {% include "client/components/aside-bar.html" with page=True %}
+    </div>
 
-        </ul>
+</div>
 
-        <nav class="top-bar">
+    <hr>
 
-            {% include "client/components/top-bar.html" %}
 
-        </nav>
+<div class="row">
 
-        <main class="content-dashboard p-5">
+    <div class="col-12">
 
-            <div id="title-dashboard" class="w-100">
+        <div class="room-info m-3">
 
-                <h1><strong class="text-p">Reserva</strong><strong class="text-se"> de sala</strong></h1>
-            
+            <p class="room-info room-cap"><strong>Capacidade:</strong> {{cap}}</p>
+            <p class="room-info room-obs"><strong>Observações:</strong> {{obs}}</p>
+                <ol>
+                    <p class="room-info room-equips"><strong>Conteúdo:</strong></p>
+                
+                    <li class="room-info room-item ml-5">Data show</li>
+                    <li class="room-info room-item ml-5">Mesa para 4 pessoas</li>
+                    <li class="room-info room-item ml-5">Impressora</li>
+                    <li class="room-info room-item ml-5">Ar condicionado</li>
+                
+                </ol>
+
+        </div>
+
+    </div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+    <div class="col-12">
+
+        <div class="room w-100">
+
+            <div class="content-hours w-100">
+                <button onclick="toogle(this)" class="hour morning bg-{{st1}} pointer border-right"><strong>8 - 9</strong></button>
+                <button onclick="toogle(this)" class="hour morning bg-{{st2}} pointer border-right"><strong>9 - 10</strong></button>
+                <button onclick="toogle(this)" class="hour morning bg-{{st3}} pointer border-right"><strong>10 - 11</strong></button>
+                <button onclick="toogle(this)" class="hour morning bg-{{st4}} pointer border-right"><strong>11 - 12</strong></button>
+                
+                <div class="hour bg-w"><strong>//</strong></div>
+
+                <button onclick="toogle(this)" class="hour afternoon bg-{{st6}} pointer border-right"><strong>14 - 15</strong></button>
+                <button onclick="toogle(this)" class="hour afternoon bg-{{st7}} pointer border-right"><strong>15 - 16</strong></button>
+                <button onclick="toogle(this)" class="hour afternoon bg-{{st8}} pointer border-right"><strong>16 - 17</strong></button>
+                <button onclick="toogle(this)" class="hour afternoon bg-{{st9}} pointer border-right"><strong>17 - 18</strong></button>
             </div>
 
-            <div class="container">
+        </div>
 
-                
-                <div class="card">
-                
-                    {% include "client/pages/booking/dashboard-content.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
+    </div>
 
-                </div>
+</div>
 
+<div class="row">
 
-            </div>
+    <div class="offset-5 col-12">
 
-        </main>
+        <a href="{% url 'make_booking' %}"><button class="btn btn-success">Confirmar</button></a>
+
+    </div>
     
-{% endblock  %}
+</div>
 
+{% if issue %}
 
-{% block scripts_js %}
-        <script src="{% static 'js/client/animations/choose-time.js' %}"></script>
-{% endblock  %}
+<hr>
+
+<div class="row">
+
+    <div class="col-12">
+
+        <h2>Reclamações</h2>
+
+        <ol class="ml-5">
+        
+            <li class="text-d">Sala estava com cheiro estranho.</li>
+            <li class="text-su">Controle do arcondicionado sem pilha.</li>
+
+        </ol>
+
+    </div>
+
+</div>
+
+{% endif %}

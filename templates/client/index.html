@@ -63,15 +63,41 @@
             {% include "client/pages/profile/index.html" with name='Fulano de tal' username="Usuário de Fulano" sex="M"  birthday='02/05/1991' role="diretor" cep="00000-00" UF="RN" city="Natal" neighborhood="Candelária" num="12" %}
 
         </main>
+
+        {% if modal %}
+
+            <div id="modal"  >
+
+                <div class="context">
+
+                    <div class="close-modal pointer" onclick="closeModal()"><i class="fas fa-times-circle"></i></div>
+                    
+                    <div class="card">
+
+                        {% if modal == "room" %}
     
-{% endblock  %}
+                            {% include "client/pages/booking/index.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
 
+                        {% elif modal == "last_booking" %}
 
-{% block scripts_js %}
+                            {% include "client/pages/last_booking/index.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
 
-        <script src="{% static 'js/client/animations/hide.js' %}"></script>
-        <script src="{% static 'js/client/pages/screens.js' %}"></script>
-        <script src="{% static 'js/client/events/profile/bind-click.js' %}"></script>
-        <script src="{% static 'js/client/animations/icon-aside-bar.js' %}"></script>
+                        {% elif modal == "current_booking" %}
 
+                            {% include "client/pages/current_booking/index.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
+
+                        {% elif modal == "pending_booking" %}
+
+                            {% include "client/pages/pending_booking/index.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endif %}
+    
 {% endblock  %}
