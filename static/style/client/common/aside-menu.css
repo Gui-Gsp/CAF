@@ -58,7 +58,7 @@
     font-size: 14px;
 }
 
-.aside-menu .subtopics .subtopic a {
+.aside-menu .subtopics .subtopic strong {
     display: block;
     width: 100%;
     margin-right: 5px;
@@ -67,12 +67,12 @@
     padding: 5px;
 }
 
-.aside-menu .subtopics .subtopic a:hover {
+.aside-menu .subtopics .subtopic strong:hover {
     color: var(--primary);
     background-color: var(--secondary);
 }
 
-.aside-menu .subtopics .subtopic a span {
+.aside-menu .subtopics .subtopic strong span {
     margin-left: 5px;
 }
 

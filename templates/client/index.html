@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'style/client/room.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/check.css' %}">
     <link rel="stylesheet" href="{% static 'style/client/booking.css' %}">
+    <link rel="stylesheet" href="{% static 'style/client/profile.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -58,6 +59,8 @@
             {% include "client/components/booking.html" with kind='current' route="current_booking" title='Reservas atuais' %}
 
             {% include "client/components/booking.html" with kind='warning' route="pending_booking" title='Reservas pendentes' %}
+
+            {% include "client/pages/profile/index.html" with name='Fulano de tal' username="Usuário de Fulano" sex="M"  birthday='02/05/1991' role="diretor" cep="00000-00" UF="RN" city="Natal" neighborhood="Candelária" num="12" %}
 
         </main>
     

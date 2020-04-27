@@ -32,6 +32,3 @@ def pending_booking(request):
 
 def justify(request):
     return render(request, 'client/pages/pending_booking/index.html', {'message': "Sua pendência foi justificada"})
-
-def show_rooms(request):
-    return render(request, 'client/pages/rooms/index.html')
