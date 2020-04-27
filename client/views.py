@@ -31,4 +31,4 @@ def pending_booking(request):
     return render(request, 'client/index.html', {'modal': "pending_booking"})
 
 def justify(request):
-    return render(request, 'client/pages/pending_booking/index.html', {'message': "Sua pendência foi justificada"})
+    return render(request, 'client/index.html', {'message': "Sua pendência foi justificada"})

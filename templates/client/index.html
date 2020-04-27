@@ -66,7 +66,7 @@
 
         {% if modal %}
 
-            <div id="modal"  >
+            <div id="modal">
 
                 <div class="context">
 
@@ -75,7 +75,7 @@
                     <div class="card">
 
                         {% if modal == "room" %}
-    
+
                             {% include "client/pages/booking/index.html" with room_name="Nome da sala" cap="x" obs="Sala com problemas no arcondicionado" issue="true" st1='g' st2='g' st3='su' st4='g' st5='su' st6='su' st7='g' st8='su' st9='g' st10='su' %}
 
                         {% elif modal == "last_booking" %}
