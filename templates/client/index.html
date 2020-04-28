@@ -62,40 +62,7 @@
 
             {% include "client/pages/profile/index.html" with name='Fulano de tal' username="Usuário de Fulano" sex="M"  birthday='02/05/1991' role="diretor" cep="00000-00" UF="RN" city="Natal" neighborhood="Candelária" num="12" %}
 
-            <div class="container" id="card-config">
-            
-                <div class="card">
-
-                    <h1 class="card-title"><strong class="text-p">Usuário e senha</strong></h1>
-
-                    <form action="" class="">
-                        <div class="form-group">
-                            <label for="current_username">Username atual</label>
-                            <input type="text" class="form-control" id="current_username" aria-describedby="updateUsername" placeholder="Digite seu usuário atual">
-                        </div>
-                        <div class="form-group">
-                            <label for="new_username">Novo username</label>
-                            <input type="text" class="form-control" id="new_username" aria-describedby="updateUsername" placeholder="Digite um usuário novo">
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="current_password">Senha atual</label>
-                            <input type="password" class="form-control" id="current_password" placeholder="Digite sua senha atual">
-                        </div>
-                        <div class="form-group">
-                            <label for="new_password">Nova senha</label>
-                            <input type="password" class="form-control" id="new_password" placeholder="Digite a nova senha">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm_new_password">Confirme a nova senha</label>
-                            <input type="password" class="form-control" id="confirm_new_password" placeholder="Confirme a nova senha">
-                        </div>
-                        <button type="submit" class="btn bg-p h-p">Salvar</button>
-                    </form>
-
-                </div>
-            
-            </div>
+            {% include "client/pages/config/index.html" %}
 
         </main>
 

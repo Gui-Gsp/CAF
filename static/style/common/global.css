@@ -4,15 +4,16 @@
     font-family: 'Nunito', 'Gotu', sans-serif;
 }
 
+
 p,label {
     margin: 0;
 }
 
 :root {
-    --primary: #1E4D59;
+    --primary: #273234;
+    --secondary: #CC8566;
     --danger: #DC0909;
     --tertiary: #011F26;
-    --secondary: #D9674E;
     --success: #1cc88a;
     --info: #36b9cc;
     --warning: #f6c23e;

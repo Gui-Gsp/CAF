@@ -1,0 +1,7 @@
+#card-config form input {
+    
+}
+
+#card-config form input:focus {
+    box-shadow: 5px 5px 5px black;
+}

@@ -1,6 +1,11 @@
 .aside-menu .logo-home {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.aside-menu .logo-home a img {
+    width: 100%;
 }
 
 .aside-menu .topic {
