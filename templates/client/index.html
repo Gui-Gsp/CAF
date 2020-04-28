@@ -62,13 +62,13 @@
 
             {% include "client/pages/profile/index.html" with name='Fulano de tal' username="Usuário de Fulano" sex="M"  birthday='02/05/1991' role="diretor" cep="00000-00" UF="RN" city="Natal" neighborhood="Candelária" num="12" %}
 
-            <div class="container">
+            <div class="container" id="card-config">
             
                 <div class="card">
 
                     <h1 class="card-title"><strong class="text-p">Usuário e senha</strong></h1>
 
-                    <form>
+                    <form action="" class="">
                         <div class="form-group">
                             <label for="current_username">Username atual</label>
                             <input type="text" class="form-control" id="current_username" aria-describedby="updateUsername" placeholder="Digite seu usuário atual">
