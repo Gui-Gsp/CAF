@@ -1,11 +1,3 @@
-.login-content {
-    width: 100%;
-    height: 100vh;
-    background-position: center center;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-}
-
 .content {
     height: 40rem;
     align-items: flex-start;
