@@ -18,8 +18,13 @@
 }
 
 .content .form-content {
-    width: 50%;
+    width: 100%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .content .form-content .logo-login {
@@ -34,14 +39,8 @@
 .content .form-content {
     width: 45%;
     border-radius: 1rem;
-    transition: border-radius 0.6s, box-shadow 0.8s;
     color: var(--primary);
 
-}
-
-.content .form-content:hover {
-    border-radius: 2rem;
-    box-shadow: 5px 5px 5px 5px black;
 }
 
 .content .form-content h1 {
@@ -58,7 +57,7 @@
 .content .form-content form input:not([type='checkbox'])  {
     border-radius: 0.6rem;
     height: 50px;
-    transition: background-color 0.8s, border-radius 0.8s, box-shadow 0.8s;
+    transition: border-radius 0.8s, box-shadow 0.8s;
     width: 100%;
 }
 
@@ -73,21 +72,26 @@
     font-size: 1.4rem;
 }
 
-.content .form-content form input:hover:not([type='checkbox']):not([type='submit']) {
-    border-radius: 2rem;
-    box-shadow: 5px 5px 5px black;
-    background-color: rgb(232, 240, 254);
-}
-
-.content a input {
-    margin: 30px 5%;
-    width: 90%;
-    height: 50px;
-    border-radius: 0.6rem;
+.content .form-content form input:focus:not([type='checkbox']):not([type='submit']) {
+    border-radius: 1.3rem;
+    box-shadow: 3px 3px 3px gray;
 }
 
 .content a {
     width: 100%;
     text-align: center;
     color: var(--primary);
+}
+
+.content .form-content form .btn {
+    width: 90%;
+    height: 50px;
+    border-radius: 0.6rem;
+}
+
+.content a input {
+    margin: 30px auto;
+    width: 50%;
+    height: 50px;
+    border-radius: 0.6rem;
 }

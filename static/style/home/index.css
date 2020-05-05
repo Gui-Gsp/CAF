@@ -30,8 +30,8 @@
 
 .content-column .cards-users .card-user:hover {
     background-color: #F3E2A9;
-    transform: translateY(-20px);
-    box-shadow: 5px 5px var(--primary);
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 3px var(--primary);
 }
 
 .content-column .cards-users .card-user i {
