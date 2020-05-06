@@ -10,9 +10,9 @@ p,label {
 }
 
 :root {
-    --primary: #1D3557;
-    --secondary: #F29559;
-    --danger: #DC0909;
+    --primary: #001233;
+    --secondary: #3e5c76;
+    --danger: #E63946;
     --tertiary: #011F26;
     --success: #1cc88a;
     --info: #36b9cc;
